@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>Login Page</title>
+        <style>
+            .tripmap-logo {
+                display: block;
+                margin: 0 auto;
+            }
+            .email-input, .password-input {
+                display: block;
+                width: 100%;
+                max-width: 240px;
+                height: 44px;
+                margin: 10px auto;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }    
+            .signinsignup-btn {
+                display: block;
+                width: 100%;
+                max-width: 240px;
+                height: 44px;
+                margin: 10px auto;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                box-sizing: border-box;
+                font-size: 16px;
+                background: white;
+                cursor: pointer;
+            }
+            .signingoogle-btn {
+                display: block;
+                width: 100%;
+                max-width: 240px;
+                height: 44px;
+                margin: 10px auto;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                box-sizing: border-box;
+                font-size: 16px;
+                background: white;
+                cursor: pointer;
+            }
+            .divider-wrap {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                max-width: 320px;
+                margin: 20px auto;
+            }
 
+            .divider-line {
+                flex: 1;
+                border: none;
+                border-top: 1px solid #ccc;
+            }
+
+            .divider-text {
+                margin: 0 12px;
+                color: #666;
+                font-size: 14px;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Login Page</h1>
+        <img class="tripmap-logo" src="../tripmap-logo.png" width="320" alt="Tripmap logo" />
+        <h1>Map it, Trip it!</h1>
+        <p>Empower your trips with AI mapping.</p><br><br>
+
+        <label>Email or Phone Number:</label><br>
+        <input class="email-input" type="text" name="email" required ><br><br>
+        <label>Password:</label><br>
+        <input class="password-input" type="password" name="password" required ><br><br>
+
+        <p>By logging in, you agree to our Terms and Privacy Policy.</p>
+        <button class="signinsignup-btn" type="submit" onclick="window.location.href='home.html'">Sign In / Sign up</button>
+
+        <div class="divider-wrap">
+            <hr class="divider-line">
+            <span class="divider-text">or</span>
+            <hr class="divider-line">
+        </div>
+        <button class="signingoogle-btn" type="button">Sign in with Google</button>
+        
     </body>
 </html>
