@@ -7,6 +7,7 @@
     <style>
         body {
     font-family: sans-serif;
+    color:#111
 }
         .tripmap-logo {
             display: block;
@@ -86,7 +87,6 @@
             border-radius: 8px;
             background: white;
             font-size: 16px;
-            color: #1f2937;
             cursor: pointer;
         }
 
@@ -105,7 +105,7 @@
 
         .divider-text {
             margin: 0 12px;
-            color: #666;
+            color: grey;
             font-size: 14px;
         }
     </style>
@@ -122,14 +122,14 @@
             <input class="email-input" type="text" name="email" required><br>
             <label>Password:</label>
             <input class="password-input" type="password" name="password" required><br>
-        <button class="signinsignup-btn">Sign In / Sign up</button>
+        <button class="signinsignup-btn" type="button" onclick="window.location.href='homepage/index.html'">Sign In / Sign up</button>
 
         <div class="divider-wrap">
             <hr class="divider-line">
             <span class="divider-text">or</span>
             <hr class="divider-line">
         </div>
-        <button class="signingoogle-btn" type="button">Sign in with Google</button>
+        <button class="signingoogle-btn" type="button" onclick="window.location.href='homepage/index.html'">Sign in with Google</button>
         <p id="grey-p">By logging in, you agree to our Terms and Privacy Policy.</p>
 
     </div>
