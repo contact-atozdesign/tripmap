@@ -14,18 +14,26 @@
         }
 
         .signinsignup-form {
-            width: 80%;
+            width: 90%;
             max-width: 480px;
             margin: auto;
             background: white;
-            border: 1px solid #e5e7eb;
+            border: 1px solid #ddd;
             border-radius: 12px;
-            padding: 40px 40px;
+            padding: 60px;
             box-sizing: border-box;
         }
 
         h1{
             color:goldenrod;
+            margin-bottom: 8px;
+        }
+
+        #slogan{
+            margin:0 0 24px 0;
+            font-style: italic;
+            font-weight: bold;
+            color:grey
         }
 
         .email-input,
@@ -43,7 +51,8 @@
             font-size: 16px;
         }
 
-        .terms-privacy {
+        
+        #grey-p{
             color:grey;
         }
 
@@ -52,7 +61,7 @@
             display: block;
             width: 100%;
             height: 44px;
-            margin: 8px 0;
+            margin: 16px 0;
             padding: 12px;
 
             border: 1px solid goldenrod;
@@ -91,7 +100,7 @@
         .divider-line {
             flex: 1;
             border: none;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #ddd;
         }
 
         .divider-text {
@@ -107,14 +116,12 @@
 
     <div class="signinsignup-form">
         <h1>Map it, Trip it!</h1>
-        <p>Empower your trips with AI mapping.</p><br>
+        <p id="slogan">Empower your trips with AI mapping.</p><br>
 
             <label>Email or Phone Number:</label>
             <input class="email-input" type="text" name="email" required><br>
             <label>Password:</label>
             <input class="password-input" type="password" name="password" required><br>
-
-        <p class="terms-privacy">By logging in, you agree to our Terms and Privacy Policy.</p>
         <button class="signinsignup-btn">Sign In / Sign up</button>
 
         <div class="divider-wrap">
@@ -123,6 +130,8 @@
             <hr class="divider-line">
         </div>
         <button class="signingoogle-btn" type="button">Sign in with Google</button>
+        <p id="grey-p">By logging in, you agree to our Terms and Privacy Policy.</p>
+
     </div>
 </body>
 
